@@ -1,4 +1,4 @@
-fp = open('2.dat', 'r')
+fp = open('../data/2.dat', 'r')
 
 s = fp.read()
 

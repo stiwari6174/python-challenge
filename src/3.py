@@ -1,6 +1,6 @@
 import re
 
-fp = open('3.dat', 'r')
+fp = open('../data/3.dat', 'r')
 s = fp.read()
 
 expr = '[a-z][A-Z]{3}[a-z][A-Z]{3}[a-z]'
