@@ -1,6 +1,6 @@
 from pickle import Unpickler
 
-obj = Unpickler(open('5.dat')).load()
+obj = Unpickler(open('../data/5.dat')).load()
 for l in obj:
     chars = ''
     for pair in l:
