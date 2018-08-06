@@ -11,6 +11,6 @@ for c in text:
     else:
         trans = trans + c
 
-print trans
+print(trans)
         
         

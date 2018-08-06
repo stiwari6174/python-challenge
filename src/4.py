@@ -1,4 +1,4 @@
-import urllib as ul
+import urllib.request as ul
 import re
 
 lnk = 'http://www.pythonchallenge.com/pc/def/linkedlist.php?nothing='
@@ -7,8 +7,8 @@ num = '12345'
 i = 0
 while num and i < 400:
     fp = ul.urlopen(lnk + num)
-    src = fp.read()
-    print src
+    src = fp.read().decode('utf-8')
+    print(src)
     matchList = re.findall('next nothing is [0-9]+', src)
     if matchList == []: 
         # no matches
