@@ -25,8 +25,5 @@ second = [156,141,165,135,169,131,176,130,187,134,191,140,191,146,186,150,179,15
 158,121,157,128,156,134,157,136,156,136];
 
 z = zip(first[:len(second)], second)
-a = np.zeros((410,410)) 
-for t in z:
-    a[t[0]][t[1]] = 200
-plt.imshow(a)
-plt.show()
+zsum = [x[0]+x[1] for x in z]
+print (zsum)
